@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'jacoco'
 mainClassName = 'autotester.TestClassFields'
 
 run { standardInput = System.in }
@@ -35,4 +36,20 @@ tasks.named('test', Test) {
    onOutput { descriptor, event ->
       logger.lifecycle("Test: " + descriptor + " produced standard out/err: " + event.message )
    }
+
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+    reports {
+        xml.required = false
+        csv.required = true
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.9"
+    reportsDirectory = layout.buildDirectory.dir('customJacocoReportDir')
 }
