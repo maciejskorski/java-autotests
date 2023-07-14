@@ -15,9 +15,5 @@ jobs:
       with:
         gradle-version: 8.1
     - name: Build with Gradle
-      run: gradle build
-    - name: Test with Gradle
-      run: gradle cleanTest test --no-build-cache
-    - name: Run with Gradle
-      run: gradle run --stacktrace
+      run: gradle clean build
 
