@@ -1,0 +1,15 @@
+apply plugin:'application'
+mainClassName = 'TestClassFields'
+
+run { standardInput = System.in }
+sourceSets { main { java { srcDir './' } } }
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    // add dependencies here like following
+    // implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
+    implementation("org.assertj:assertj-core:3.24.2")
+}
