@@ -11,6 +11,8 @@ repositories {
     jcenter()
 }
 
+
+
 dependencies {
     // add dependencies here like following
     // implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
@@ -19,7 +21,7 @@ dependencies {
     testRuntimeOnly "org.junit.platform:junit-platform-launcher"
 }
 
-tasks.named('test') {
+tasks.named('test', Test) {
     useJUnitPlatform()
 
     testLogging {
