@@ -15,7 +15,9 @@ jobs:
       with:
         gradle-version: 8.2
     - name: Run build with Gradle Wrapper
-      run: ./gradlew build
+      run: |
+        chmod +x gradlew
+        ./gradlew build
     - name: Run app with Gradle Wrapper
       run: ./gradlew run --stacktrace
 
