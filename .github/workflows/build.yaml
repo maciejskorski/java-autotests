@@ -15,4 +15,7 @@ jobs:
       with:
         gradle-version: 8.2
         arguments: test
+    - name: Build with Gradle
+      run: |
+        gradle clean build
 
