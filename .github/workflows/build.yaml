@@ -17,5 +17,5 @@ jobs:
     - name: Run build with Gradle Wrapper
       run: gradle build
     - name: Run app with Gradle Wrapper
-      run: gradle run --stacktrace
+      run: gradle run --debug --stacktrace
 
