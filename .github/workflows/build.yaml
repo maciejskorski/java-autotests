@@ -2,6 +2,7 @@ name: Build and Run Gradle project
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   build-gradle-project:
