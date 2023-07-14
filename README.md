@@ -5,7 +5,7 @@
 # java-autotests
 The repo shows how to automate tests for Java classes, run them on GitHub Actions, and present CodeCoverage.
 
-The idea is to use reflection and dynamically construct and invoke getters and setters, based on extracted fields and their types.
+The idea is to use reflection and,  based on extracted fields and their types, dynamically construct and invoke getters and setters.
 
 
 ```java
