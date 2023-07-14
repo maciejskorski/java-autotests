@@ -12,5 +12,3 @@ class App {
    public static void main(String[] args) {
    }
 }
-
-https://app.codecov.io/gh/maciejskorski/java-autotester/settings/badge
