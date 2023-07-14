@@ -19,5 +19,5 @@ jobs:
     - name: Run with Gradle
       run: gradle run --stacktrace
     - name: Test with Gradle
-      run: gradle test
+      run: gradle clean test
 
