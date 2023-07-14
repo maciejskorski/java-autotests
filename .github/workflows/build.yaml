@@ -1,4 +1,4 @@
-name: Build and Run Gradle project
+name: Build, Test and Run Gradle project
 
 on:
   push:
@@ -18,4 +18,6 @@ jobs:
       run: gradle build
     - name: Run with Gradle
       run: gradle run --stacktrace
+    - name: Test with Gradle
+      run: gradle test
 
