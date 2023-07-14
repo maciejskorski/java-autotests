@@ -1,4 +1,5 @@
-apply plugin:'application'
+apply plugin: 'java'
+apply plugin: 'application'
 mainClassName = 'autotester.TestClassFields'
 
 run { standardInput = System.in }
