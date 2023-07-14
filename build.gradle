@@ -1,5 +1,5 @@
 apply plugin:'application'
-mainClassName = 'TestClassFields'
+mainClassName = 'autotester.TestClassFields'
 
 run { standardInput = System.in }
 sourceSets { main { java { srcDir './' } } }
