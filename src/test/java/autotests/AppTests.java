@@ -9,7 +9,8 @@ public class AppTests {
     @Test
     public void testApp() {
         String[] args = {"arg1","arg2","arg3"};
-        App.main(args);
+        App instance = new App();
+        instance.main(args);
     }
 
 }
