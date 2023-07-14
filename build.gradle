@@ -16,9 +16,10 @@ repositories {
 dependencies {
     // add dependencies here like following
     // implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
-    implementation "org.assertj:assertj-core:3.24.2" 
-    testImplementation "org.junit.jupiter:junit-jupiter:5.9.2"
-    testRuntimeOnly "org.junit.platform:junit-platform-launcher"
+    implementation 'org.assertj:assertj-core:3.24.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
 }
 
 tasks.named('test', Test) {
