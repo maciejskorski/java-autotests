@@ -10,12 +10,11 @@ jobs:
     steps:
     - name: Checkout project sources
       uses: actions/checkout@v3
-    - name: Setup Gradle
+    - name: Setup Gradle and run tests
       uses: gradle/gradle-build-action@v2
       with:
+        arguments: test
         gradle-version: 8.2
-    - name: Test with Gradle
-      run: gradle test
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
