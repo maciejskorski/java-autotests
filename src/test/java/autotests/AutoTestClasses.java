@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import autotester.AnimalClass;
 import autotester.PersonClass;
 
-// tester class, comes first to compile under onecompiler.com
+// tester class
 class AutoTests {
   
     private static final Class[] classToTest = new Class[]{ 
